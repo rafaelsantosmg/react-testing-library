@@ -2,10 +2,10 @@ import React from 'react';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import renderWithRouter from '../renderWithRouter';
+import { pokemonTest } from '../services/pokemonTest';
 import FavoritePokemons from '../components/FavoritePokemons';
-import pokemons from '../data';
+import Pokemon from '../components/Pokemon';
 import App from '../App';
-import { Pokemon } from '../components';
 
 describe('Teste o componente <FavoritePokemons.js />', () => {
   it(`Teste se é exibido na tela a mensagem No favorite pokemon found,
@@ -23,9 +23,9 @@ describe('Teste o componente <FavoritePokemons.js />', () => {
     expect(inputDetail).toBeChecked();
     history.push('/favorites');
     renderWithRouter(<Pokemon
-      pokemon={ pokemons[1] }
+      pokemon={ pokemonTest }
       showDetailsLink={ false }
-      isFavorite
+      isFavorite={ pokemonTest.isFavorite }
     />);
     const namePokemon = screen.getAllByTestId('pokemon-name');
     expect(namePokemon[0]).toHaveTextContent('Charmander');
