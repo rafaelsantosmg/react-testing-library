@@ -23,7 +23,7 @@ describe('Teste o componente <FavoritePokemons.js />', () => {
     expect(inputDetail).toBeChecked();
     history.push('/favorites');
     renderWithRouter(<Pokemon
-      pokemon={ pokemonTest }
+      pokemon={ pokemonTest[0] }
       showDetailsLink={ false }
       isFavorite={ pokemonTest.isFavorite }
     />);
