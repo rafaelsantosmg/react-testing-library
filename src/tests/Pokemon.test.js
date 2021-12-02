@@ -3,7 +3,7 @@ import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import renderWithRouter from '../renderWithRouter';
 import Pokemon from '../components/Pokemon';
-import { pokemonTest } from '../services/pokemonTest';
+import pokemonTest from './mockPokemon/pokemonTest';
 import App from '../App';
 
 const dataTestIdName = 'pokemon-name';

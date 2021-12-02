@@ -1,4 +1,4 @@
-export const pokemonTest = [
+const pokemonTest = [
   {
     id: 4,
     name: 'Charmander',
@@ -50,6 +50,9 @@ export const pokemonTest = [
         map: 'https://cdn2.bulbagarden.net/upload/b/bd/Kanto_Celadon_City_Map.png',
       },
     ],
-    summary: 'This intelligent Pokémon roasts hard berries with electricity to make them tender enough to eat.',
-  }
-]
+    summary: `This intelligent Pokémon roasts hard berries with electricity to make
+    them tender enough to eat.`,
+  },
+];
+
+export default pokemonTest;
