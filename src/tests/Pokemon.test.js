@@ -5,7 +5,6 @@ import renderWithRouter from '../renderWithRouter';
 import Pokemon from '../components/Pokemon';
 import { pokemonTest } from '../services/pokemonTest';
 import App from '../App';
-import { Pokedex } from '../components';
 
 const dataTestIdName = 'pokemon-name';
 
