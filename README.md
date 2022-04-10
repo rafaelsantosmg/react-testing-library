@@ -1,7 +1,5 @@
 
-# Tryunfo
-
-Projeto inspirado no jogo Tryunfo de cartas e construido em REACT.
+# React Testing Library
 
 ## Habilidades Desenvolvidas
 
