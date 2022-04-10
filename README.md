@@ -49,7 +49,7 @@ Inicie o servidor
   npm run start
 ```
 
-Rode o comando de teste
+Rode o comando de teste em um novo terminal pois o teste pecisa que servidor esteja rodando!
 ```bash
    npm run test-coverage
 ```
